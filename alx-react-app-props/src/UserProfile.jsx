@@ -1,15 +1,15 @@
 import { useContext } from "react";
 import UserContext from "./UserContext";
 
-function UserDetails() {
+function UserProfile() {
   const userData = useContext(UserContext);
 
   return (
-    <div style={{ padding: '20px', border: '1px solid gray', borderRadius: '8px' }}>
-      <p>Name: {userData.name}</p>
+    <div style={{ border: "1px solid gray", padding: "15px", borderRadius: "8px" }}>
+      <h2>Name: {userData.name}</h2>
       <p>Email: {userData.email}</p>
     </div>
   );
 }
 
-export default UserDetails;
+export default UserProfile;
